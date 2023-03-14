@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SideHustle Task 1</title>
+    <style>
+      body{
+        text-align: center;
+      }
+    </style>
+    
     <script>
       function myFunction() {
         alert("The form was submitted");
@@ -12,11 +18,12 @@
       </script>
   </head>
   <body>
-    <div class="container">
-      <h1 class="form-title">SideHustle</h1>
+  
+    <div>
+      <h1>SideHustle Form</h1>
       <form action="/action_page.php" onsubmit="myFunction()">
-        <div class="user-info">
-          <div class="input-box">
+        <div>
+          <div>
             <label for="fullName">Full Name</label>
             <input
               type="text"
@@ -26,9 +33,10 @@
               required
             />
           </div>
+          <br>
 
-          <div class="input-box">
-            <label for="email">Email</label>
+          <div>
+            <label for="email">Email address</label>
             <input
               type="email"
               id="email"
@@ -37,8 +45,9 @@
               required
             />
           </div>
+          <br>
 
-          <div class="input-box">
+          <div>
             <label for="phoneNumber">Phone Number</label>
             <input
               type="tel"
@@ -49,9 +58,12 @@
             />
           </div>
 
-          <div class="gender-details-box">
-            <span class="gender-title">Gender</span>
-              <div class="gender-category">
+          <br>
+          
+
+          <div>
+            <span>Gender</span>
+              <div>
                   <label for="male">Male</label>
                   <input type="radio" name="gender" id="male">
 
@@ -60,7 +72,9 @@
               </div>
           </div>
 
-          <div class="input-box">
+          <br>
+
+          <div>
             <label for="password">Password</label>
             <input
               type="password"
@@ -70,16 +84,18 @@
               required
             />
           </div>
+          <br>
 
         </div>
 
-          <div class="form-submit-btn">
+          <div>
             <input type="submit">
           </div>
 
        
         </div>
       </form>
+    
     </div>
   </body>
 </html>
